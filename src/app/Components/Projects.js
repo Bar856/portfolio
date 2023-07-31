@@ -61,7 +61,16 @@ export default function Projects() {
   return (
       
       <main id="projects" className="min-h-screen center">
-        <p></p>
+        {
+          Projects.Python.map((p, i)=>{
+            return (
+            <div>
+                 <h1 id={i}>{p.name}</h1>
+                 <h2 id={i}>Tools Used: {p.tools}</h2>
+                 <p id={i}>Info: {p.desc}</p>
+            </div> )
+          })
+        }
       </main>
     )
  }
