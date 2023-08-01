@@ -1,21 +1,28 @@
+import Image from "next/image"
 export default function Projects() {
+  const lngs = ['Python','React','React-Native','Node.js','JavaScript','HTML','CSS']
+  const tools = ['FireStore','AWS','Docker','Postman','MongoDB','Twilio']
     return (
       <main id="skills" className="min-h-screen center">
-        <h1>Programming Languages</h1>
-        <p>Python</p>
-        <p>React</p>
-        <p>React Native</p>
-        <p>Node.js</p>
-        <p>Javscript</p>
-        <p>CSS</p>
-        <p>HTML</p>
-        <h1>Tools</h1>
-        <p>Firestore</p>
-        <p>AWS</p>
-        <p>Docker</p>
-        <p>MongoDB</p>
-        <p>Postman</p>
-        <p>Twilio API</p>
+        <div className="grid grid-cols-2 gap-32 place-content-evenly h-48">
+          <div className="ml-3">
+            <h2 className="mb-4">Languages</h2>
+            {
+              lngs.map((v,i)=>{
+                return <div className=" flex items-start mb-2" key={i}><Image className="mr-3" width={"50"} height={"50"} src={`/icons/${v}.png`}/> <p>{`  ${v}`}</p></div>
+              })
+            }
+          </div>
+          <div>
+            <h2 className="mb-4">Tools</h2>
+            {
+              tools.map((v,i)=>{
+                return <div className="flex items-start mb-2" key={i}><Image className="mr-3" width={"50"} height={"50"} src={`/icons/${v}.png`}/> <p>{v}</p></div>
+              })
+            
+            }
+          </div>
+        </div>
       </main>
     )
  }

@@ -6,6 +6,18 @@
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
 }
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 0, 0, 0;
+} */
+/* @media (prefers-color-scheme: dark) {
+  * {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
 a{
   text-decoration: none;
   color: inherit;
@@ -20,7 +32,10 @@ nav{
   padding: 16px;
   justify-content: space-between;
   align-items: center;
-  background-color: #f1f1f1;
+  background-color: rgb(var(--background-start-rgb));
+  
+  margin-bottom: 7vh;
+  height: 8vh;
 }
 .nav__menu-bar{
   display: flex;
@@ -38,14 +53,14 @@ nav{
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 60px;
+  top: 9vh;
   width: 288px;
   row-gap: 24px;
   right: -288px;
   padding: 24px 16px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
-  background-color: #f1f1f1;
+  background-color: --foreground-rgb;
 }
 .nav__menu-list.active{
   right: 0;
@@ -61,10 +76,12 @@ nav{
 }
 
 .center{
-  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.nav__item:hover{
+  background-color: rgba(208, 203, 203, 0.326);
 }
 @media screen and (min-width: 768px) {
   .nav__menu-bar{

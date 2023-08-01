@@ -3,11 +3,10 @@ import Image from "next/image";
 import React, { useState } from "react";
 // import Logo from "./Logo";
 import NavItem from "./NavItem";
-import './Navbar.css'
+import '../globals.css'
 
 const MENU_LIST = [
-  { text: "Home", href: "/" },
-  { text: "About", href: "#about" },
+  { text: "About", href: "/" },
   { text: "Skills", href: "#skills" },
   { text: "Projects", href: "#projects" },
   { text: "Contact", href: "#contact" },
@@ -20,7 +19,7 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-            <h1 className="logo">Bar Portfolio</h1>
+            <h2 className="logo">Bar</h2>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}

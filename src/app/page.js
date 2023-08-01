@@ -7,9 +7,11 @@ import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 import Contact from './Components/Contact'
 import  './Components/Navbar.css'
+import './globals.css'
+
 export default function Home() {
   return (
-    <main  className="min-h-screen">
+    <main  className=" pad min-h-screen">
       <Navbar />
       <About />
       <Skills />
