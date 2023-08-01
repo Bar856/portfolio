@@ -84,7 +84,7 @@ export default class NextJsCarousel extends Component {
                     <div key={i} className='flex flex-col border neutral-200 rounded-lg item'>
                         <h3 onClick={()=>{openInNewTab(v?.url)}} className="mt-5 underline hover hover:bg-neutral-500">{v.name}</h3>
                         <h4>{v.desc}</h4>
-                        <img className='rounded-lg' src={v.screenshots[0]} alt={v.name}/>
+                        <Image className='rounded-lg' src={v.screenshots[0]} alt={v.name}/>
                     </div>
                   )
                 })
@@ -100,7 +100,7 @@ export default class NextJsCarousel extends Component {
                     <div key={i} className='flex flex-col border neutral-200 rounded-lg  item'>
                         <h3 className="mt-5 underline">{v.name}</h3>
                         <h4>{v.desc}</h4>
-                        {v.screenshots && <img className='rounded-lg' src={v.screenshots[0]} alt={v.name}/>}
+                        {v.screenshots && <Image className='rounded-lg' src={v.screenshots[0]} alt={v.name}/>}
                     </div>
                   )
                 })
