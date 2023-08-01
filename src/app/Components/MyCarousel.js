@@ -70,14 +70,14 @@ export default class NextJsCarousel extends Component {
       win.focus();
     }
       return (
-        <main className='flex center flex-col'>
+        <div className='flex center flex-col'>
           <div className='rounded-lg center w-1/2 px-8 flex flex-col mt-10'>
             <h2 className='center'>Web</h2>
             <Carousel className='carousel' showThumbs={false} dynamicHeight={false}  showStatus={false} infiniteLoop={true} transitionTime={4000} autoPlay={true} interval={5000}>
               {
                 projects.WebApps.map((v,i)=>{
                   return (
-                    <div key={i} className='flex flex-col border neutral-200 rounded-lg p-4 ml-10 mr-10 item'>
+                    <div key={i} className='flex flex-col border neutral-200 rounded-lg item'>
                         <h3 className="mt-5 underline hover hover:bg-neutral-500">{v.name}</h3>
                         <h4>{v.desc}</h4>
                         <img className='rounded-lg' src={v.screenshots[0]} alt={v.name}/>
@@ -93,7 +93,7 @@ export default class NextJsCarousel extends Component {
               {
                 projects.Python.map((v,i)=>{
                   return (
-                    <div key={i} className='flex flex-col border neutral-200 rounded-lg p-4 ml-10 mr-10 item'>
+                    <div key={i} className='flex flex-col border neutral-200 rounded-lg  item'>
                         <h3 className="mt-5 underline hover hover:bg-neutral-500">{v.name}</h3>
                         <h4>{v.desc}</h4>
                         <img className='rounded-lg' src={v.screenshots[0]} alt={v.name}/>
@@ -102,8 +102,8 @@ export default class NextJsCarousel extends Component {
                 })
               }
             </Carousel>
-          </div>
-        </main>
+          </div> 
+        </div>
     );
   }
 };

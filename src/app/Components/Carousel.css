@@ -6,23 +6,25 @@
       position: relative;
       top: 0;
       left: 0;
+      padding: 15vw;
+      /* margin-left: 10vw; */
+      /* margin-right: 10vw; */
       min-height: 30vh;
-        padding: 20px;
-        min-width: 10vw;
-        margin-bottom: auto;
+      padding: 20px;
+      min-width: 10vw;
+      margin-bottom: auto;
   }
   @media screen and (max-width: 768px) {
     .carousel .item {
         height: 80vh;
-        max-width: 90vw;
+        max-width: 80vw;
       }
       
       .item img {
           position: relative;
           /* top: 0; */
           /* left: 0; */
-            max-width: 90vw;
-            min-width: 20vw;
+            max-width: 80vw;
             /* margin-bottom: auto; */
       }
 }

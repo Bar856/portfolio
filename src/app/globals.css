@@ -32,6 +32,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    overflow-x: hidden;
 }
 h1{
   font-size: 3.5rem;
@@ -66,5 +67,9 @@ p{
   }
   p{
     font-size: 1rem;
+  }
+  .mr-3{
+    width: 10vw;
+    height: 10vw;
   }
 }
