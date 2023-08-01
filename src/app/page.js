@@ -1,5 +1,4 @@
 'use client'
-
 import Image from 'next/image'
 import Navbar from './Components/Navbar'
 import About from './Components/About'
@@ -11,12 +10,13 @@ import './globals.css'
 
 export default function Home() {
   return (
-    <main  className=" pad min-h-screen">
+    <main  className="pad min-h-screen">
       <Navbar />
       <About />
       <Skills />
       <Projects />
       <Contact />
+      <footer className='center'>® Bar Maizel All Rights Reserved</footer>
     </main>
   )
 }
