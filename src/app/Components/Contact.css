@@ -20,6 +20,3 @@
 .form{
   width: 50%;
 }
-.formItem:hover{
-  background-color: rgb(var(--background-end-rgb));
-}

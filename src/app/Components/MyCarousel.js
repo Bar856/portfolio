@@ -9,44 +9,48 @@ export default class NextJsCarousel extends Component {
     render() {
       const projects = {
         "Python":[
+          {
+            "name":"GPT Bot",
+            "desc":"Generate blog for wordpress sites by titles.",
+            "screenshots":["/screenshots/GPT/1.png"]
+            
+          },
             {
-                "name":"Switcher App For Djs",
+                "name":"Switcher App",
                 "tools":"CustomTkinter, pymongo",
-                "desc":"Switcher is a tool for Israeli DJs that allows them to play songs with Hebrew file names on Pioneer all-in-one controllers, which do not support Hebrew. The tool converts file names to English and is built with customTkinter GUI and MongoDB. Users can access the tool by paying a monthly subscription.",
+                "desc":"Switcher is a tool for Israeli DJs that converts Tracks names from English to Hebrew.",
                 "screenshots":["/screenshots/Switcher/1.png", "/screenshots/Switcher/2.png", "/screenshots/Switcher/3.png"]
             },
             {
                 "name":"Yelp Nearby jobs responder",
                 "tools":"Selenium Webdriver, Impalib, BeautifulSoup, customTkinter",
-                "desc":"The Selenium Chrome Webdriver script automates the process of replying to nearby jobs leads that expires after short time. Specifically, it opens Chrome, logs in to the Yelp account, and listens for new emails. If a new nearby job email is detected, the script automatically presses buttons and sends a custom message to the customer.",
+                "desc":"Automate quick respond to Yelp Nearby Leads (By default the lead is gone if it doesn't get reply in few minutes).",
                 "screenshots":["/screenshots/Yelp/1.png"]
             },
             {
                 "name":"Jobs SMS Bot",
                 "tools":"Twilio, CSV, Flask",
-                "desc":"SMS Leads Bot is a server that retrieves job leads from a lead supply company and assigns them to employees within our company. It uses advanced algorithms to match leads with the most suitable employee based on skills and availability. The bot also provides real-time tracking of employee progress and sends reminders to ensure leads are responded to in a timely manner. This tool is specifically designed for Service industry in USA and has been used for Locksmith industry.",
-                "screenshots":["/screenshots/nothingPy.png"]
+                "desc":"SMS Leads Bot is a Flask server that retrieves job leads from a lead supply company and assigns them to employees within our company. It uses advanced algorithms to match leads with the most suitable employee based on skills and availability. The bot also provides real-time tracking of employee progress and sends reminders to ensure leads are responded to in a timely manner.",
             }
         ],
         "WebApps":[
             {
                 "name":"Minerva XR LMS",
                 "tools":"React, Node.js, FireBase Firestore, Docker, AWS.",
-                "desc":"I was part of the full-stack team that developed the LMS system for MinervaXR, a company that specializes in VR learning for the medical industry. Our LMS system offers a unique and immersive learning experience, with features such as virtual patient simulations and real-time data analytics. As a team, we worked on various aspects of the system, including front-end development, back-end programming, and database management, to ensure the smooth functioning and scalability of the system. We are proud to have played a role in equipping healthcare professionals with the necessary skills to handle complex cases and improve retention of medical knowledge.",
+                "desc":"I was part of the full-stack team that developed the LMS system for MinervaXR, a company that specializes in VR learning for the medical industry. Our LMS system offers a unique and immersive learning experience, with features such as virtual patient simulations and real-time data analytics. As a team, we worked on various aspects of the system, including front-end development, back-end programming, and database management, to ensure the smooth functioning and scalability of the system.",
                 "screenshots":["/screenshots/Minerva/1.png", "/screenshots/Minerva/2.png"],
                 "url":"http://3.215.12.125"
             },
             {
                 "name":"Battle Cards Game",
                 "tools":"React",
-                "desc":"As part of Full-Stack course i created Battle cards game.",
                 "screenshots":["/screenshots/Battle/1.png"],
                 "url":"https://bar856.github.io/BattleGame/"
             },
             {
                 "name":"Switcher Site",
                 "tools":"React",
-                "desc":"Site for selling my Python program for Djs.",
+                "desc":"Site for selling my Python App.",
                 "screenshots":["/screenshots/SwticherSite/1.png"],
                 "url":"https://bar856.github.io/SwitcherForDjs/"
             },
@@ -78,7 +82,7 @@ export default class NextJsCarousel extends Component {
                 projects.WebApps.map((v,i)=>{
                   return (
                     <div key={i} className='flex flex-col border neutral-200 rounded-lg item'>
-                        <h3 className="mt-5 underline hover hover:bg-neutral-500">{v.name}</h3>
+                        <h3 onClick={()=>{openInNewTab(v?.url)}} className="mt-5 underline hover hover:bg-neutral-500">{v.name}</h3>
                         <h4>{v.desc}</h4>
                         <img className='rounded-lg' src={v.screenshots[0]} alt={v.name}/>
                     </div>
@@ -94,9 +98,9 @@ export default class NextJsCarousel extends Component {
                 projects.Python.map((v,i)=>{
                   return (
                     <div key={i} className='flex flex-col border neutral-200 rounded-lg  item'>
-                        <h3 className="mt-5 underline hover hover:bg-neutral-500">{v.name}</h3>
+                        <h3 className="mt-5 underline">{v.name}</h3>
                         <h4>{v.desc}</h4>
-                        <img className='rounded-lg' src={v.screenshots[0]} alt={v.name}/>
+                        {v.screenshots && <img className='rounded-lg' src={v.screenshots[0]} alt={v.name}/>}
                     </div>
                   )
                 })

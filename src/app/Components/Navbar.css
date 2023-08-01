@@ -34,8 +34,8 @@ nav{
   align-items: center;
   background-color: rgb(var(--background-start-rgb));
   
-  margin-bottom: 7vh;
-  height: 8vh;
+  /* margin-bottom: 7vh; */
+  /* height: 8vh; */
 }
 .nav__menu-bar{
   display: flex;
@@ -88,7 +88,7 @@ nav{
     display: none;
   }
   .nav__menu-list{
-    position: unset;
+    position: sticky;
     flex-direction: row;
     min-height: fit-content;
     width: fit-content;
