@@ -1,8 +1,4 @@
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 250, 250, 250;
-}
+
 
 @media screen and (max-width: 768px) {
   .formItem{
@@ -16,6 +12,9 @@
   border: rgb(var(--background-start-rgb)) solid 2px;
   padding: 5px;
   width: 100%;
+}
+.formItem:hover{
+  background-color: rgb(83, 83, 83);
 }
 .form{
   width: 50%;

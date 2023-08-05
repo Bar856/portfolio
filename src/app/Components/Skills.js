@@ -9,7 +9,7 @@ export default function Projects() {
             <h2 className="mb-4">Languages</h2>
             {
               lngs.map((v,i)=>{
-                return <div className=" flex items-start mb-2" key={i}><Image className="mr-3" width={"50"} height={"50"} src={`/icons/${v}.png`} alt={v}/> <p>{`  ${v}`}</p></div>
+                return <div className=" flex items-start mb-2" key={i}><Image className="skillsIcons mr-3" width={"50"} height={"50"} src={`/icons/${v}.png`} alt={v}/> <p>{`  ${v}`}</p></div>
               })
             }
           </div>
