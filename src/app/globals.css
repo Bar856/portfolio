@@ -29,13 +29,10 @@
     --background-end-rgb: 200, 200, 200;
   }
   .mr-3{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     border-radius: 30%;
   }
-  .formItem{
-    background-color: rgb(59, 59, 59);
-    color: white;
-  }
+
 }
 html{
   scroll-behavior: smooth;

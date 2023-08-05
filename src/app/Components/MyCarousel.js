@@ -81,10 +81,10 @@ export default class NextJsCarousel extends Component {
               {
                 projects.WebApps.map((v,i)=>{
                   return (
-                    <div key={i} className='flex flex-col item'>
-                        <h3 onClick={()=>{openInNewTab(v?.url)}} className="mt-5 underline hover hover:bg-neutral-500">{v.name}</h3>
+                    <div key={i} className='flex flex-col item center'>
+                        <h3 onClick={()=>{openInNewTab(v?.url)}} className="cursor-pointer mt-5 underline hover hover:bg-neutral-500">{v.name}</h3>
                         <h4>{v.desc}</h4>
-                        <Image width={1000} height={500} className='rounded-lg' src={v.screenshots[0]} alt={v.name}/>
+                        <Image width={1000} height={500} className='projectsImg rounded-lg' src={v.screenshots[0]} alt={v.name}/>
                     </div>
                   )
                 })
@@ -97,10 +97,10 @@ export default class NextJsCarousel extends Component {
               {
                 projects.Python.map((v,i)=>{
                   return (
-                    <div key={i} className='flex flex-col item'>
+                    <div key={i} className='flex flex-col item center'>
                         <h3 className="mt-5 underline">{v.name}</h3>
                         <h4>{v.desc}</h4>
-                        {v.screenshots &&<Image width={500} height={500} className='rounded-lg' src={v.screenshots[0]} alt={v.name}/> }
+                        {v.screenshots &&<Image width={1000} height={1000} className='projectsImg rounded-lg' src={v.screenshots[0]} alt={v.name}/> }
                     </div>
                   )
                 })
