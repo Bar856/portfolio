@@ -22,9 +22,6 @@ nav{
   justify-content: space-between;
   align-items: center;
   background-color: rgb(var(--background-start-rgb));
-  
-  /* margin-bottom: 7vh; */
-  /* height: 8vh; */
 }
 .nav__menu-bar{
   display: flex;

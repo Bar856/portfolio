@@ -1,29 +1,22 @@
-.carousel .item {
-        /* max-height: 20vh; */
-        /* height: auto; */
-  }
-  .projectsImg{
-    max-height: 60vh;
-    max-width: 50vw;
-  }
-  .item img {
-      /* padding: 15vw; */
-      /* margin-left: 10vw; */
-      /* margin-right: 10vw; */
-      padding: 20px;
-      min-width: 20vw;
-      margin-bottom: auto;
-  }
-  @media screen and (max-width: 768px) {
-    .carousel .item {
-        max-width: 80vw;
-      }
-      
-      .item img {
-          position: relative;
-          /* top: 0; */
-          /* left: 0; */
-            max-width: 80vw;
-            /* margin-bottom: auto; */
-      }
+.projectsImg{
+  max-height: 60vh;
+  max-width: 50vw;
+}
+.item img {
+    padding: 20px;
+    min-width: 20vw;
+    margin-bottom: auto;
+}
+@media screen and (max-width: 768px) {
+  .carousel .item {
+      max-width: 80vw;
+    }
+    
+    .item img {
+        position: relative;
+        /* top: 0; */
+        /* left: 0; */
+          max-width: 80vw;
+          /* margin-bottom: auto; */
+    }
 }
