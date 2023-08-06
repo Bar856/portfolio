@@ -36,11 +36,9 @@ const Navbar = () => {
         <Link href={"/"}>
             <h2 className="logo">Bar</h2>
         </Link>
-        <Link href={"/"}>
         <div className=" ">
           {darkMode ? "Dark Mode: ON" : "Dark Mode: OFF"}
         </div>
-        </Link>
         <div
           onClick={() => setNavActive(!navActive)}
           className={`nav__menu-bar`}
