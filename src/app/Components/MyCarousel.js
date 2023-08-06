@@ -24,20 +24,20 @@ export default class NextJsCarousel extends Component {
             {
                 "name":"Yelp Nearby jobs responder",
                 "tools":"Selenium Webdriver, Impalib, BeautifulSoup, customTkinter",
-                "desc":"Automate quick respond to Yelp Nearby Leads (By default the lead is gone if it doesn't get reply in few minutes).",
+                "desc":"Automate prompt responses to Yelp Nearby Leads (By default, a lead is lost if it doesn't receive a response within a short period of time).",
                 "screenshots":["/screenshots/Yelp/1.png"]
             },
             {
                 "name":"Jobs SMS Bot",
                 "tools":"Twilio, CSV, Flask",
-                "desc":"SMS Leads Bot is a Flask server that retrieves job leads from a lead supply company and assigns them to employees within our company. It uses advanced algorithms to match leads with the most suitable employee based on skills and availability. The bot also provides real-time tracking of employee progress and sends reminders to ensure leads are responded to in a timely manner.",
+                "desc":"A Flask server called SMS Leads Bot gathers job leads from a lead supplier and distributes them to staff members at our business. It perfectly matches leads with the best employee based on their special abilities and present availability by utilising sophisticated algorithms. The bot also offers real-time employee progress tracking, making sure that all duties are openly tracked and taken care of. It delivers frequent notifications to staff members to ensure that leads are promptly replied to, maintaining workflow efficiency.It is very important to understand that a Flask server hosts and manages the bot. It is linked with services like Twilio and Google Voice to enable real-time monitoring and easy communication. The bot, however, lacks a graphical user interface (GUI), making it a backend tool that is streamlined and optimized for speed and performance.",
             }
         ],
         "WebApps":[
             {
                 "name":"Minerva XR LMS",
                 "tools":"React, Node.js, FireBase Firestore, Docker, AWS.",
-                "desc":"I was part of the full-stack team that developed the LMS system for MinervaXR, a company that specializes in VR learning for the medical industry. Our LMS system offers a unique and immersive learning experience, with features such as virtual patient simulations and real-time data analytics. As a team, we worked on various aspects of the system, including front-end development, back-end programming, and database management, to ensure the smooth functioning and scalability of the system.",
+                "desc":"I was part of the full-stack team that developed the LMS system for MinervaXR, a company that specializes in VR learning for the medical industry.With features like virtual patient simulations and real-time data analytics, our LMS system provides a distinctive and immersive learning environment. To ensure the system's efficient operation and scalability, our team worked on a variety of system-related tasks, including front-end development, back-end programming, and database maintenance.",
                 "screenshots":["/screenshots/Minerva/1.png", "/screenshots/Minerva/2.png"],
                 "url":"http://3.215.12.125"
             },
