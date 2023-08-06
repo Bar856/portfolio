@@ -1,10 +1,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
 // import Logo from "./Logo";
 import NavItem from "./NavItem";
 import '../globals.css'
+import React, { useState, useEffect } from "react";
 
 const MENU_LIST = [
   { text: "About", href: "/" },
@@ -13,14 +13,33 @@ const MENU_LIST = [
   { text: "Contact", href: "#contact" },
 ];
 const Navbar = () => {
+  
   const [navActive, setNavActive] = useState(null);
   const [activeIdx, setActiveIdx] = useState(-1);
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+    setDarkMode(prefersDarkMode.matches);
+    const darkModeListener = (event) => {
+      setDarkMode(event.matches);
+    };
+    prefersDarkMode.addEventListener("change", darkModeListener);
+    return () => {
+      prefersDarkMode.removeEventListener("change", darkModeListener);
+    };
+  }, []);
 
   return (
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
             <h2 className="logo">Bar</h2>
+        </Link>
+        <Link href={"/"}>
+        <div className=" ">
+          {darkMode ? "Dark Mode: ON" : "Dark Mode: OFF"}
+        </div>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}
