@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function Projects() {
   const lngs = ['TypeScript','JavaScript','HTML','CSS','Python']
-  const frameworks = ['Next.js','React','React-Native','Node.js']
+  const frameworks = ['Next.js','Expo', 'React','React-Native','Node.js']
   const tools = ['GitHub','FireStore','AWS','Docker','Postman','MongoDB','Twilio']
     return (
       <main id="skills" className="mt-32 center">

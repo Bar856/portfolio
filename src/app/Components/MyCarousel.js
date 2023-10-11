@@ -30,51 +30,25 @@ export default class NextJsCarousel extends Component {
           {
             "name":"Jobs SMS Bot",
             "tools":"Twilio, CSV, Flask",
-            "desc":"A Flask server called SMS Leads Bot gathers job leads from a lead supplier and distributes them to staff members at our business. It perfectly matches leads with the best employee based on their special abilities and present availability by utilising sophisticated algorithms. The bot also offers real-time employee progress tracking, making sure that all duties are openly tracked and taken care of. It delivers frequent notifications to staff members to ensure that leads are promptly replied to, maintaining workflow efficiency.It is very important to understand that a Flask server hosts and manages the bot. It is linked with services like Twilio and Google Voice to enable real-time monitoring and easy communication. The bot, however, lacks a graphical user interface (GUI), making it a backend tool that is streamlined and optimized for speed and performance.",
+            "desc":"A Flask server called SMS Leads Bot gathers job leads from a lead supplier and distributes them to staff members. It perfectly matches leads with the best employee based on their special abilities and present availability by utilising sophisticated algorithms. The bot also offers real-time employee progress tracking, making sure that all duties are openly tracked and taken care of. It delivers frequent notifications to staff members to ensure that leads are promptly replied to, maintaining workflow efficiency.It is very important to understand that a Flask server hosts and manages the bot. It is linked with services like Twilio and Google Voice to enable real-time monitoring and easy communication. The bot, however, lacks a graphical user interface (GUI), making it a backend tool that is streamlined and optimized for speed and performance.",
             "url":"https://github.com/Bar856/SMS-JOBS-bot-TWILLIO-"
           }
         ],
         "WebApps":[
           {
-            "name":"Minerva XR LMS",
+            "name":"Minerva LMS",
             "tools":"React, Node.js, FireBase Firestore, Docker, AWS.",
-            "desc":"I was part of the full-stack team that developed the LMS system for MinervaXR, a company that specializes in VR learning for the medical industry.With features like virtual patient simulations and real-time data analytics, our LMS system provides a distinctive and immersive learning environment. To ensure the system's efficient operation and scalability, our team worked on a variety of system-related tasks, including front-end development, back-end programming, and database maintenance.",
+            "desc":"virtual patient simulations and real-time data analytics, distinctive and immersive learning environment.",
             "screenshots":["/screenshots/Minerva/2.png", "/screenshots/Minerva/2.png"],
             "url":"https://minervaxr.com/"
           },
           {
             "name":"RF Integrations-Lab Mapping",
             "tools":"HTML, CSS",
-            "desc":"A web application built with Next.js for WIFI company, allowing users to manage RF Integrations-Lab Mapping. It provides an interactive interface to view, update, and clear the ownership status of different stations. The app fetches data from an API and supports real-time updates with periodic data refresh.",
+            "desc":"A web application built with Next.js, allowing users to manage RF Integrations-Lab. It provides an interactive interface to view, update, and clear the ownership status of different stations.",
             "screenshots":["/screenshots/RF/RF.png"],
             "url":"https://github.com/Bar856/or-boxes"
           },
-          // {
-          //     "name":"Battle Cards Game",
-          //     "tools":"React",
-          //     "screenshots":["/screenshots/Battle/1.png"],
-          //     "url":"https://bar856.github.io/BattleGame/"
-          // },
-          {
-              "name":"Switcher Site",
-              "tools":"React",
-              "desc":"Site for selling my Python App.",
-              "screenshots":["/screenshots/SwticherSite/1.png"],
-              "url":"https://bar856.github.io/SwitcherForDjs/"
-          },
-          // {
-          //     "name":"Naor-Team",
-          //     "tools":"React",
-          //     "desc":"Landing page for professional trainer.",
-          //     "screenshots":["/screenshots/Naor/1.png"],
-          //     "url":"https://naor-team.co.il"
-          // },
-          // {
-          //     "name":"Sudoku Project",
-          //     "tools":"HTML, CSS",
-          //     "desc":"Sudoku game project as part of Full-Stack course",
-          //     "screenshots":["/screenshots/Sudoku/1.png"]
-          // }
         ]
     }  
     function openInNewTab(url) {
