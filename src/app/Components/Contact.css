@@ -11,6 +11,7 @@
   border: rgb(var(--background-start-rgb)) solid 2px;
   padding: 5px;
   width: 100%;
+  transition: ease 0.8s;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -68,6 +68,7 @@ nav{
 }
 .nav__item:hover{
   background-color: rgba(208, 203, 203, 0.326);
+  transition: ease 0.5s;
 }
 @media screen and (min-width: 768px) {
   .nav__menu-bar{
