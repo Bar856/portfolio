@@ -48,7 +48,22 @@ export default class NextJsCarousel extends Component {
             "desc":"A web application built with Next.js, allowing users to manage RF Integrations-Lab. It provides an interactive interface to view, update, and clear the ownership status of different stations.",
             "screenshots":["/screenshots/RF/RF.png"],
             "url":"https://github.com/Bar856/or-boxes"
+          },{
+            "name":"MinervaXR Official Site",
+            "tools":"Next.js",
+            "desc":"A web app created with next.js showing minerva projects and products including hidden system for managing users",
+            "screenshots":["/screenshots/minervaSite.png"],
+            "url":"https://github.com/Bar856/or-boxes"
           },
+        ],
+        "mobileApps":[
+          {
+            "name":"Mirror Like APP",
+            "tools":"TypeScript, Expo.dev, firebase",
+            "desc":"App created for cleaning company including Efficient customer management such as Generate quote requests, manage work schedules, handle emergency cleaning, and set cleaning reminders.Empowered employees: easily access personal schedules, and navigate directly to customer locations with built-in maps.Manager access:Oversee work arrangements, manage user access, and control all aspects of your business with ease.",
+            "screenshots":["/screenshots/mirrorlike.png", "/screenshots/Minerva/2.png"],
+            "url":"https://minervaxr.com/"
+          }
         ]
     }  
     function openInNewTab(url) {
@@ -75,8 +90,24 @@ export default class NextJsCarousel extends Component {
               }
             </Carousel>
           </div>
+          <div className='rounded-lg center w-1/2 px-8 flex flex-col mt-10'>
+            <h2 className='center'>Mobile</h2>
+            <Carousel className='carousel' showThumbs={false} dynamicHeight={false}  showStatus={false} infiniteLoop={true} transitionTime={4000} autoPlay={true} interval={5000}>
+              {
+                projects.mobileApps.map((v,i)=>{
+                  return (
+                    <div key={i} className='flex flex-col item center'>
+                        <h3 onClick={()=>{openInNewTab(v?.url)}} className="cursor-pointer mt-5 underline hover hover:bg-neutral-500">{v.name}</h3>
+                        <h4>{v.desc}</h4>
+                        <Image width={1000} height={500} className='projectsImg rounded-lg' src={v.screenshots[0]} alt={v.name}/>
+                    </div>
+                  )
+                })
+              }
+            </Carousel>
+          </div>
           <div className='rounded-lg center w-1/2 flex flex-col mt-10'>
-            <h2 className=''>Python</h2>
+            <h2 className=''>Software</h2>
             <Carousel className='carousel' showThumbs={false} dynamicHeight={false}  showStatus={false} infiniteLoop={true} transitionTime={4000} autoPlay={true} interval={5000}>
               {
                 projects.Python.map((v,i)=>{

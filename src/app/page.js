@@ -10,7 +10,7 @@ import './globals.css'
 
 export default function Home() {
   return (
-    <main  className="pad min-h-screen">
+    <main  className="pb-10 min-h-screen">
       <Navbar />
       <About />
       <Skills />

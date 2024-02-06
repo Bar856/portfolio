@@ -34,7 +34,7 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-            <h2 className="logo">Bar</h2>
+            <h2 className="logo pl-16">Bar</h2>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}
